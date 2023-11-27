@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap');
+
+.body {
+    background: rgb(250, 250, 250);
+}
+.header-logo-text {
+    letter-spacing: 0.3rem;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 3rem;
+}
+
+.header, .footer {
+    background: #eee;
+}
+
+
+@media (min-width: 801px) {
+    .header-logo {
+        margin: 1rem auto 1.5rem;
+    }
+    .navPages-item, .navPages-action {
+        display: inline-block;
+    }
+    .navPages-item {
+        float: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .navPages-item {
+        border-top: 1px dotted black;
+    }
+    
+    .navPages-list + .navPages-list {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
